@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Account-FashionFusion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+   
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+
+                <img src="pictures/download.png" width="125px">
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="front.html">Home</a></li>
+
+                    <li><a href="shop.html">Product</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a class="active" href="">Account</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="cart.html"><img src="pictures/cart icon 2.jpeg" width="30px" height="30px"></a>
+
+            <img src="pictures/menu icon.png" class="menu-icon">
+
+       
+
+</div>
+
+ 
+
+<!--account-page-->
+
+<div class="account">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col2">
+
+                <img src="about.png" width="100%" >
+
+            </div>
+
+            <div class="col2">
+
+                <div class="form-container">
+
+                    <div class="form-btn">
+
+                        <span onclick="login()">Login</span>
+
+                        <span onclick="register()">Register</span>
+
+                        <hr id="indicator">
+
+                     
+
+                    </div>
+
+                    <form id="Loginform">
+
+                        <input type="text" placeholder="Username">
+
+                        <input type="password" placeholder="Password">
+
+                        <button type="submit" class="btn">Login</button>
+
+                        <a href="">Forgot Password</a>
+
+                    </form>
+
+                    <form id="Regform">
+
+                        <input type="text" placeholder="Username">
+
+                        <input type="email" placeholder="Email">
+
+                        <input type="password" placeholder="Password">
+
+                        <button type="submit" class="btn">Register</button>
+
+                       
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 
+
+    <!--footer-->
+
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="footer-col1">
+
+                    <h3>Download our App</h3>
+
+                    <p>Download App for Android and ios mobile phone.</p>
+
+                    <div class="applogo">
+
+                        <img src="pictures/logo 2.png">
+
+                        <img src="pictures/logo 3.png">
+
+                    </div>
+
+                </div>
+
+                <div class="footer-col2">
+
+                    <img src="pictures/logo 1.png">
+
+                    <p>Our Purpose is to Sustainably make the Pleasure and Benifits of Fashion Accessible to many.</p>
+
+                </div>
+
+                <div class="footer-col3">
+
+                    <h3>Useful Links</h3>
+
+                    <ul>
+
+                        <li>Coupons</li>
+
+                        <li>Blog Post</li>
+
+                        <li>Return Policy</li>
+
+                        <li>Join Affiliate</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col4">
+
+                    <h3>Follow us</h3>
+
+                    <ul>
+
+                        <li>Facebook</li>
+
+                        <li>Twitter</li>
+
+                        <li>Instagram</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+
+            <p>Copyright 2023 - Easy Tutorials</p>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!----js for toggle form----->
+
+ 
+
+    <script>
+
+        var Loginform=document.getElementById("Loginform");
+
+        var Regform=document.getElementById("Regform");
+
+        var indicator=document.getElementById("indicator");
+
+ 
+
+        function register(){
+
+            Regform.style.transform="translateX(0px)";
+
+            Loginform.style.transform="translateX(0px)";
+
+            indicator.style.transform="translateX(100px)";
+
+        }
+
+            function login(){
+
+            Regform.style.transform="translateX(300px)";
+
+            Loginform.style.transform="translateX(300px)";
+
+            indicator.style.transform="translateX(0px)";
+
+        }
+
+ 
+
+    </script>
+
+</body>
+
+</html>
